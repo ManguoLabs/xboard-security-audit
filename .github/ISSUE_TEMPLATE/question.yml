@@ -1,0 +1,20 @@
+name: Security audit question
+description: Ask a general question without submitting user data.
+title: "[Question] "
+body:
+  - type: markdown
+    attributes:
+      value: "Never post tokens, full IP addresses, account identifiers, private logs, or customer data."
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy confirmation
+      options:
+        - label: I removed all secrets and personal data.
+          required: true
